@@ -1,0 +1,45 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url("Image/gasolineria.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+
+    min-height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+body::before {
+    content: '';
+    background-image: linear-gradient(to right, #52c4df, #ad55c1);
+
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    min-height: 100vh;
+
+    opacity: .3;
+    z-index: -1;
+}
+
+h1 {
+    color: white;
+
+    font-family: 'adam';
+    font-weight: 900;
+    font-size: 3em;
+
+    word-spacing: 0.6em;
+    letter-spacing: 10px;
+}
